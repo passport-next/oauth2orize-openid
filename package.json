@@ -1,6 +1,6 @@
 {
-  "name": "oauth2orize-openid",
-  "version": "0.4.0",
+  "name": "@passport-next/oauth2orize-openid",
+  "version": "2.0.0",
   "description": "Extensions to support OpenID Connect with OAuth2orize.",
   "keywords": [
     "openid",
@@ -19,16 +19,15 @@
     "middleware"
   ],
   "author": {
-    "name": "Jared Hanson",
-    "email": "jaredhanson@gmail.com",
-    "url": "http://www.jaredhanson.net/"
+    "name": "Adam Hathcock",
+    "email": "adam@hathcock.co.uk"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/jaredhanson/oauth2orize-openid.git"
+    "url": "git://github.com/passport-next/oauth2orize-openid.git"
   },
   "bugs": {
-    "url": "http://github.com/jaredhanson/oauth2orize-openid/issues"
+    "url": "http://github.com/passport-next/oauth2orize-openid/issues"
   },
   "license": "MIT",
   "licenses": [
@@ -39,17 +38,18 @@
   ],
   "main": "./lib",
   "dependencies": {
-    "utils-merge": "1.x.x"
+    "@passport-next/oauth2orize": "^2.0.0",
+    "lodash": "4.x.x"
   },
   "devDependencies": {
     "make-node": "0.3.x",
-    "mocha": "2.x.x",
-    "chai": "2.x.x",
+    "mocha": "5.x.x",
+    "chai": "4.x.x",
     "chai-connect-middleware": "0.3.x",
-    "chai-oauth2orize-grant": "0.2.x"
+    "chai-oauth2orize-grant": "0.3.x"
   },
   "engines": {
-    "node": ">= 0.4.0"
+    "node": ">= 6"
   },
   "scripts": {
     "test": "node_modules/.bin/mocha --reporter spec --require test/bootstrap/node test/*.test.js test/**/*.test.js"
